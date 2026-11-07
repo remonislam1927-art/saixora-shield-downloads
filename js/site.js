@@ -84,7 +84,7 @@
 
   document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());
 
-  // Mobile navigation
+  
   const menuButton = document.querySelector(".menu-toggle");
   const mobileNav = document.querySelector(".mobile-nav");
   if (menuButton && mobileNav) {
@@ -99,7 +99,6 @@
     }));
   }
 
-  // Reveal sections as they enter the viewport. Honors reduced-motion settings.
   const revealItems = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     const observer = new IntersectionObserver(entries => {
@@ -125,7 +124,7 @@
     toastTimer = setTimeout(() => toast.classList.remove("show"), 5000);
   };
 
-  // Configure downloads from one place. Binary files are intentionally not fabricated or bundled.
+  
   document.querySelectorAll("[data-download]").forEach(button => {
     const key = button.dataset.download;
     const release = cfg.releases && cfg.releases[key];
@@ -145,7 +144,7 @@
     else button.setAttribute("aria-disabled", "true");
   });
 
-  // Contact form uses the visitor's email app. It does not send data to this website.
+  
   const contactForm = document.querySelector("[data-contact-form]");
   if (contactForm) {
     contactForm.addEventListener("submit", event => {
@@ -165,7 +164,7 @@
     });
   }
 
-  // Dynamic metadata / structured data can be tied to the final domain after it is selected.
+
   if (cfg.websiteUrl) {
     const baseUrl = cfg.websiteUrl.endsWith("/") ? cfg.websiteUrl : cfg.websiteUrl + "/";
     let canonical = document.querySelector('link[rel="canonical"]');

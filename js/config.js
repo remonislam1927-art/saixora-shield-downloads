@@ -1,15 +1,11 @@
-/*
-  SAIXORA WEBSITE CONFIGURATION
-  Add genuine release files and version numbers before enabling downloads.
-*/
 window.SAIXORA_CONFIG = {
   companyName: "SAIXORA Technology",
   productName: "SAIXORA Shield",
   tagline: "You Think. I Build.",
-  ownerName: "Remon Islam",
+  ownerName: "Md Remon Islam",
   ownerPortfolio: "https://remonislam1927-art.github.io/portfolio-website/",
-  supportEmail: "", // Add the official support/contact email before publishing.
-  websiteUrl: "", // Add the final production domain, e.g. https://saixora.example
+  supportEmail: "remonislam1927@gmail.com", 
+  websiteUrl: "https://remonislam1927-art.github.io/saixora-shield-downloads/",
 releases: {
     windows: {
         label: "Device Shield for Windows",
